@@ -1,0 +1,14 @@
+clase 1 - Fusion del menu Desktop
+
+el codigo para activar o desactivar el menu de la derecha es:
+
+*****************
+const menuEmail = document.querySelector('.navbar-email'); // coge el objeto del navbarEmail
+const desktopMenu = document.querySelector('.desktop-menu'); // coge el menu oculto
+
+menuEmail.addEventListener('click', toggleDesktopMenu); // le mete eventos de click y fija nombre funcion
+
+function toggleDesktopMenu(){               
+    desktopMenu.classList.toggle('inactive');
+}                                                       // crea la funcion con el evento CLICK de antes y le añade classList Toogle para activar el DISPLAY NONE!!!!
+******************
